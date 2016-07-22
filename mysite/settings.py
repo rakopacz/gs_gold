@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'fancybox',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -52,6 +53,10 @@ MIDDLEWARE_CLASSES = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
+
+TEMPLATE_CONTEXT_PROCESSORS = [ 
+    "django.core.context_processors.request" 
+] 
 
 TEMPLATES = [
     {

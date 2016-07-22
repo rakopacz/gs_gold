@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+                {% load staticfiles %}
+                {% include "fancybox/fancybox_css.html" %}
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Veselka" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,600italic' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+		<script type="text/javascript" src="{% static "blog/jquery.fancybox.js?v=2.1.5" %}"></script>
+		<link rel="stylesheet" type="text/css" href="{% static "blog/jquery.fancybox.css?v=2.1.5" %} media="screen" />
+
+		<!-- bxSlider Javascript file -->
+		<script src="{% static "blog/jquery.bxslider.min.js" %}"></script>
+		<!-- bxSlider CSS file -->
+		<link href="{% static "blog/jquery.bxslider.css" %}" rel="stylesheet" />
+
+		<script type="text/javascript" src="{% static "blog/scripts.js" %}"></script>
+		<link rel="stylesheet" href="{% static "blog/style.css" %}">
+		<title>I am</title>
+	</head>
+	<body>
+	{% include "fancybox/fancybox_js.html" %}
+		<header>
+			<div class="wrap">
+				<a href="#home" class="logo"></a>
+				<nav>
+					<ul id="top-menu">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#team">Weekly Topics</a></li>
+						<li><div class="dropdown"><a class="dropbtn" href="#contact">Download</a>
+                                                      <div class="dropdown-content">
+                                                        <a href="" target="_blank">Manual</a>
+                                                        <a href="" target="_blank">Journal Template</a>
+                                                        <a href="" target="_blank">Permission Slips</a>
+                                                      </div> 
+                                                    </div>
+                                                </li>
+                                                <li><a href="#contact">Comments</a></li>
+					</ul>
+					<div id="pull">
+				        <span class="btn">Menu</span>
+				    </div>
+				</nav>
+			</div>
+		</header>
+		<section id="home">
+			<img src="{% static "blog/slogan.png" %}" alt="Your slogan" />
+		</section>
+		<section id="about">
+			<div class="wrap">
+				<h2>About The Project</h2>
+				<p>As young girls mature into teens, they are very vulnerable to the impacts of social media, culture views, TV, magazines, and peers. I believe we should be fostering their interests, talents, and unique qualities to encourage successful, strong, and independent girls. Research shows that girls as young as 12 years old can experience a decline in positive self-esteem. Elementary and middle school aged girls can become more susceptible to the impact of negative views on a girl’s unique qualities. Therefore, early introduction to positive self-worth is crucial. To prevent a lowered self-esteem and teach girls that they can be accepted for who they are, a 6-week weekly workshop will be hosted to strengthen positive body image in 5th and 6th grade girls.</p>
+                                <p>The mission of the “I am…” afterschool workshop is to encourage the unique differences in each individual girl. They will learn to develop healthy habits while maintaining a positive self-image without molding to modern society’s standards.</p>
+                                <p>Each week the workshop will focus on a specific topic that contributes to an overall positive outlook on a girl’s life.</p>
+			</div>
+		</section>
+				
+		<section id="team">
+			<div class="wrap">
+				<h2>Weekly Topics</h2>
+
+				<ul class="bxslider">
+					<li>
+						<img src="{% static "blog/b1.png" %}" alt="Team member" />
+						<p class="name">Praise Uniqueness</p>
+						<p class="post">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						<a href="#inline1" class="fancybox">Read more</a>
+					</li>
+					<li>
+						<img src="{% static "blog/b2.png" %}" alt="Team member" />
+						<p class="name">Establish Healthy Eating Habits</p>
+						<p class="post">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						<a href="#inline2" class="fancybox">Read more</a>
+					</li>
+					<li>
+						<img src="{% static "blog/b3.png" %}" alt="Team member" />
+						<p class="name">Promote Physical Activity</p>
+						<p class="post">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						<a href="#inline3" class="fancybox">Read more</a>
+					</li>
+					<li>
+						<img src="{% static "blog/b4.png" %}" alt="Team member" />
+						<p class="name">Counter Negative Media Messages</p>
+						<p class="post">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						<a href="#inline4" class="fancybox">Read more</a>
+					</li>
+					<li>
+						<img src="{% static "blog/b5.png" %}" alt="Team member" />
+						<p class="name">Encourage Positive Relationships</p>
+						<p class="post">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						<a href="#inline5" class="fancybox">Read more</a>
+					</li>
+					<li>
+						<img src="{% static "blog/b6.png" %}" alt="Team member" />
+						<p class="name">Set a Good Example</p>
+						<p class="post">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						<a href="#inline6" class="fancybox">Read more</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<div id="inline1" class="popupbox">
+			<h3>Praise Uniqueness</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien. Vestibulum imperdiet porta ante ac ornare. Nulla et lorem eu nibh adipiscing ultricies nec at lacus. Cras laoreet ultricies sem, at blandit mi eleifend aliquam. Nunc enim ipsum, vehicula non pretium varius, cursus ac tortor. Vivamus fringilla congue laoreet. Quisque ultrices sodales orci, quis rhoncus justo auctor in. Phasellus dui eros, bibendum eu feugiat ornare, faucibus eu mi. Nunc aliquet tempus sem, id aliquam diam varius ac. Maecenas nisl nunc, molestie vitae eleifend vel, iaculis sed magna. Aenean tempus lacus vitae orci posuere porttitor eget non felis. Donec lectus elit, aliquam nec eleifend sit amet, vestibulum sed nunc.</p>
+			<iframe width="560" height="380" src="https://www.youtube.com/embed/iVIjckwltkk" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div id="inline2" class="popupbox">
+			<h3>Establish Healthy Eating Habits</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien. Vestibulum imperdiet porta ante ac ornare. Nulla et lorem eu nibh adipiscing ultricies nec at lacus. Cras laoreet ultricies sem, at blandit mi eleifend aliquam. Nunc enim ipsum, vehicula non pretium varius, cursus ac tortor. Vivamus fringilla congue laoreet. Quisque ultrices sodales orci, quis rhoncus justo auctor in. Phasellus dui eros, bibendum eu feugiat ornare, faucibus eu mi. Nunc aliquet tempus sem, id aliquam diam varius ac. Maecenas nisl nunc, molestie vitae eleifend vel, iaculis sed magna. Aenean tempus lacus vitae orci posuere porttitor eget non felis. Donec lectus elit, aliquam nec eleifend sit amet, vestibulum sed nunc.
+			</p>
+		</div>
+		<div id="inline3" class="popupbox">
+			<h3>Promote Physical Activity</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien. Vestibulum imperdiet porta ante ac ornare. Nulla et lorem eu nibh adipiscing ultricies nec at lacus. Cras laoreet ultricies sem, at blandit mi eleifend aliquam. Nunc enim ipsum, vehicula non pretium varius, cursus ac tortor. Vivamus fringilla congue laoreet. Quisque ultrices sodales orci, quis rhoncus justo auctor in. Phasellus dui eros, bibendum eu feugiat ornare, faucibus eu mi. Nunc aliquet tempus sem, id aliquam diam varius ac. Maecenas nisl nunc, molestie vitae eleifend vel, iaculis sed magna. Aenean tempus lacus vitae orci posuere porttitor eget non felis. Donec lectus elit, aliquam nec eleifend sit amet, vestibulum sed nunc.
+			</p>
+		</div>
+		<div id="inline4" class="popupbox">
+			<h3>Counter Negative Media Messages</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien. Vestibulum imperdiet porta ante ac ornare. Nulla et lorem eu nibh adipiscing ultricies nec at lacus. Cras laoreet ultricies sem, at blandit mi eleifend aliquam. Nunc enim ipsum, vehicula non pretium varius, cursus ac tortor. Vivamus fringilla congue laoreet. Quisque ultrices sodales orci, quis rhoncus justo auctor in. Phasellus dui eros, bibendum eu feugiat ornare, faucibus eu mi. Nunc aliquet tempus sem, id aliquam diam varius ac. Maecenas nisl nunc, molestie vitae eleifend vel, iaculis sed magna. Aenean tempus lacus vitae orci posuere porttitor eget non felis. Donec lectus elit, aliquam nec eleifend sit amet, vestibulum sed nunc.
+			</p>
+		</div>
+		<div id="inline5" class="popupbox">
+			<h3>Encourage Positive Relationships</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien. Vestibulum imperdiet porta ante ac ornare. Nulla et lorem eu nibh adipiscing ultricies nec at lacus. Cras laoreet ultricies sem, at blandit mi eleifend aliquam. Nunc enim ipsum, vehicula non pretium varius, cursus ac tortor. Vivamus fringilla congue laoreet. Quisque ultrices sodales orci, quis rhoncus justo auctor in. Phasellus dui eros, bibendum eu feugiat ornare, faucibus eu mi. Nunc aliquet tempus sem, id aliquam diam varius ac. Maecenas nisl nunc, molestie vitae eleifend vel, iaculis sed magna. Aenean tempus lacus vitae orci posuere porttitor eget non felis. Donec lectus elit, aliquam nec eleifend sit amet, vestibulum sed nunc.
+			</p>
+		</div>
+		<div id="inline6" class="popupbox">
+			<h3>Set a Good Example</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien. Vestibulum imperdiet porta ante ac ornare. Nulla et lorem eu nibh adipiscing ultricies nec at lacus. Cras laoreet ultricies sem, at blandit mi eleifend aliquam. Nunc enim ipsum, vehicula non pretium varius, cursus ac tortor. Vivamus fringilla congue laoreet. Quisque ultrices sodales orci, quis rhoncus justo auctor in. Phasellus dui eros, bibendum eu feugiat ornare, faucibus eu mi. Nunc aliquet tempus sem, id aliquam diam varius ac. Maecenas nisl nunc, molestie vitae eleifend vel, iaculis sed magna. Aenean tempus lacus vitae orci posuere porttitor eget non felis. Donec lectus elit, aliquam nec eleifend sit amet, vestibulum sed nunc.
+			</p>
+		</div>
+		<section id="contact">
+			<div class="wrap">
+				<h2 style="margin-left:15%;">Comments</h2>
+				<div class="col4">
+					<form class="contactform">
+						<label class="col1 first" for="name">Name:</label>
+						<input type="text" name="name" id="name" class="col2" />
+						<label class="col1" for="email">E-mail:</label>
+						<input type="text" name="email" id="email" class="col2" />
+						<div class="clearfix"></div>
+						<label class="col1 first" for="message">Message:</label>
+						<textarea class="col5" rows="5" name="message" id="message"></textarea>
+						<input class="button clearfix" type="button" value="Send message" />
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer>
+			
+		</footer>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var slider = $('.bxslider').bxSlider({
+				  controls:true,
+				  minSlides: 1,
+				  maxSlides: 3,
+				  slideWidth: 304,
+				  slideMargin: 44
+				});  
+			});
+			$(document).ready(function() {
+				$(".fancybox").fancybox({
+					maxWidth	: 800,
+					maxHeight	: 600,
+					fitToView	: false,
+					width		: '70%',
+					height		: '70%',
+					autoSize	: false
+				});
+			});
+		</script>
+		
+	</body>
+</html>
