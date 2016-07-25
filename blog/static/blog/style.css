@@ -166,10 +166,11 @@ section {
 }
 #home {
     text-align:center;
-    margin-top:80px;
+    margin-top:100px;
     height:250px;
     width:80%;
     padding:20px 0 20px 40%;
+	
 }
 #about,
 #team {
@@ -452,8 +453,11 @@ footer a:hover {
         display: block;
     } 
     #home {
-        margin-top:40px;
-        padding:100px 0;
+		margin:auto;
+        padding:65px 0px;
+		max-width:400px;
+		display: block;
+		
     }
 }
 @media screen and (max-width: 640px) { 
